@@ -1,0 +1,9 @@
+@import "../../sass/main.scss";
+.main-page {
+  margin-left: $width;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: var(--background-main-page);
+}

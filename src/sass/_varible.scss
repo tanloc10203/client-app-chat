@@ -1,0 +1,28 @@
+$color-input: #1597bb;
+$deplay-25s: all 0.25s ease 0s;
+$deplay-3s: all 0.25s linear 0s;
+$deplay-4s: all 0.4s ease 0s;
+$deplay-5s: all 0.5s ease 0s;
+@mixin generateDots($size, $spacing, $columns) {
+  width: $size;
+  height: $size;
+  background: #97c3f9;
+  border-radius: 50%;
+  $value: ();
+  @for $i from 0 to $columns {
+    @for $j from 0 to $columns {
+      $x: $i * $spacing + px;
+      $y: $j * $spacing + px;
+      $theShadow: $x $y #97c3f9;
+      $value: append($value, $theShadow, comma);
+    }
+  }
+  box-shadow: $value;
+}
+@mixin roundShape($size) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+}
+$width: 80px;
+$red: #ff4848;

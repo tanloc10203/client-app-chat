@@ -1,0 +1,16 @@
+html[data-theme="dark"] {
+  --color: #fff;
+  --background-color: #242526;
+  --red: #ff4848;
+  --color-sidebar: #787a91;
+  --color-logo: #fff;
+  --background-main-page: #18191a;
+  --color-main: #1597bb;
+  --color-border: #fff;
+  --color-notification: #fff;
+  --background-input: #4d4d4d;
+  --color-input: #fff;
+  --color-num: #000;
+  --color-name: #fff;
+  --background-hover: #4d4d4d;
+}

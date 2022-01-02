@@ -1,0 +1,174 @@
+@import "../src/sass/main.scss";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  // overflow: hidden;
+}
+.form-group {
+  margin-top: 25px;
+  position: relative;
+  .label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 11px;
+    user-select: none;
+    color: var(--color);
+    pointer-events: none;
+    transition: all 0.25s ease 0s;
+  }
+  .form-control {
+    width: 100%;
+    outline: none;
+    border: none;
+    border: 2px solid #eee;
+    background: var(--background-input);
+    color: var(--color-input);
+    padding: 13px;
+    z-index: 10;
+    transition: all 0.5s ease-in-out 0s;
+    border-radius: 3px;
+    min-height: 35px;
+    &:focus {
+      border-color: $color-input;
+    }
+    &:not(:placeholder-shown) + .label,
+    &:focus + .label {
+      display: inline-block;
+      top: 0;
+      font-size: 13px;
+      background: var(--background-input);
+      color: $color-input;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      padding: 2px;
+      left: 9px;
+    }
+    &:focus + .label + .icon-search {
+      color: $color-input;
+    }
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: $color-input;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  border-radius: 30px;
+  outline: none;
+  padding: 10px 0;
+  background: transparent;
+  color: $color-input;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  border: none;
+  box-shadow: 0 0 3px;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 100%;
+    width: 0%;
+    background: $color-input;
+    border-radius: 30px;
+    z-index: -1;
+    transition: width 0.3s ease-in-out 0s;
+  }
+  &:hover::before {
+    width: 100%;
+  }
+  &:hover {
+    color: #fff;
+  }
+}
+
+.mt-3 {
+  margin-top: 30px;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.mt-1 {
+  margin-top: 10px;
+}
+
+.hidden-pass {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.mb-3 {
+  margin-bottom: 30px;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+.mb-1 {
+  margin-bottom: 10px;
+}
+
+.error {
+  color: #e02401;
+  font-style: italic;
+  font-size: 13px;
+  margin-top: 5px;
+  transition: $deplay-5s;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.my-3 {
+  margin: 30px 0;
+}
+
+.my-2 {
+  margin: 20px 0;
+}
+
+.my-1 {
+  margin: 10px 0;
+}
+
+.border-30 {
+  border-radius: 30px;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}

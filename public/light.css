@@ -1,0 +1,35 @@
+html[data-theme="light"] {
+  --color: #999;
+  --background-color: #fff;
+  --red: #ff4848;
+  --color-sidebar: #787a91;
+  --color-logo: #000;
+  --background-main-page: #fff;
+  --color-main: #1597bb;
+  --color-border: #ccc;
+  --color-notification: #777;
+  --background-input: #fff;
+  --color-input: #000;
+  --color-num: #999;
+  --color-name: #393e46;
+  --background-hover: #f7f7f7;
+  --background-input-send: #e4e6eb;
+}
+
+:root {
+  --color: #999;
+  --background-color: #fff;
+  --red: #ff4848;
+  --color-sidebar: #787a91;
+  --color-logo: #000;
+  --background-main-page: #fff;
+  --color-main: #1597bb;
+  --color-border: #ccc;
+  --color-notification: #777;
+  --background-input: #fff;
+  --color-input: #000;
+  --color-num: #999;
+  --color-name: #393e46;
+  --background-hover: #f7f7f7;
+  --background-input-send: #e4e6eb;
+}
