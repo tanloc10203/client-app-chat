@@ -12,9 +12,8 @@
     transform: translateX(50%);
     margin: 20px 0;
   }
-  &--round{
+  &--round {
     @include roundShape(10px);
-    
     background: red;
   }
   &--search {
